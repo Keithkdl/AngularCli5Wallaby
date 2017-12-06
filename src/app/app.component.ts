@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { environment } from '../environments/environment';
+import { environment } from '@env/environment';                     // error
+// import { environment } from '../environments/environment';       // works
 
 @Component({
     selector: 'app-root',

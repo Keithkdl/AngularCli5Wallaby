@@ -33,7 +33,10 @@ module.exports = function ( wallaby ) {
                 path.join( wallaby.projectCacheDir, 'src/app' ),
                 path.join( wallaby.projectCacheDir, 'src' ),
                 'node_modules'
-            ]
+            ],
+            alias: {
+                '@env': path.resolve(wallaby.projectCacheDir, 'src/environments')
+            }
         },
         node: {
             fs: 'empty',
